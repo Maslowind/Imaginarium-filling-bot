@@ -7,6 +7,7 @@ module.exports = function eventsFunctions(bot) {
         //console.log(msg);
 
         if (msg.photo != undefined) {
+            createPhoto(msg.photo[0].file_id)
             bot.sendMessage(chatId, (msg.from.first_name + ', дякую =)'));
         }
         /*else if (msg.text = "/showAll") {
